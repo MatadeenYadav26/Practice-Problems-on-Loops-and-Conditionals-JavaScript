@@ -1,94 +1,110 @@
-// Problems: Level-1 : Pure Begginer Practice
+// Question-7 : Print voting eligibility
 
-// 1: print numbers from 1 to 10: 
-for(i=1 ; i<11;i++)
-    console.log(i);
+// let user = prompt("What is you age: ")
+// if(user === null){
+//     console.error("You pressed cancel")
+// }
+// else{
+//     if(user.trim() === ""){
+//         console.error("Please input something.")
+//     }
+//     else{
+//     user = Number(user)
+//         if (isNaN(user)){
+//             console.log("Pleasse enter a Number...")
+//         }
+//            else{
+//             if(user<0){
+//                 console.error("Invalid Age.")
+//             }
+//             else if(user >=18){
+//                 console.log("You are eligible to vote!")
+//             } 
+//              else{
+//                  console.log(`You are in-eligible to vote.you are ${user}.`)
+//              }
+//             }
+//     }
+// }
+// Shortend by GPT : 
+// let user = prompt("What is your age:");
+// if (user === null) {
+//     console.error("You pressed cancel");
+// } else if (user.trim() === "") {
+//     console.error("Please input something.");
+// } else {
+//     user = Number(user);
 
-// 2: print only even numbers :
-for (i=0;i<11;i++)
-    if(i%2 === 0){
-        console.log(i)
-    }
+//     if (isNaN(user)) {
+//         console.error("Please enter a number.");
+//     } else if (user < 0) {
+//         console.error("Invalid age.");
+//     } else if (user >= 18) {
+//         console.log("You are eligible to vote!");
+//     } else {
+//         console.log(`You are ineligible to vote. You are ${user}.`);
+//     }
+// }
 
-//  3: Print from 10 to 1 :
-for (i=10;i>0;i--)
-    console.log(i)
 
-// 4. Print the word "Yes" 5 times repeat using loop:
-for (i=1;i<6;i++)
-    console.log("Yes")
+// Question-08 : Print table of 5 or :
+// for(i=1;i<11;i++){
+//     console.log(`5 X ${i} = ${5*i}`)
+// }
 
-// 5. Check if number is even or odd & print "Even" or "Odd" btwn 1-10:
-for (i=1;i<11;i++)
-    if(i%2 === 0){
-        //    console.log(i)
-        console.log(`${i} - Even`)
-    }
-    else{
-        //    console.log(i)
-        console.log(`${i} - Odd`)
-    }
+// Question-09 : Count How many numbers b/w 1-15 are greater than 8: Loop and count conditionally
+// count = 0;
 
-// 6.Ask user for a number and tell is it's positive or negative , use : use prompt() and conditionals:
+// for (i=1;i<16;i++){
+//     if(i>8){
+//         count++;
+//     }
+// }
 
-let input = +prompt("Enter a Number");
-// console.log(typeof input)
-if (input > 0){
-    console.log("Positive")
-}
-if (input === 0){
-    console.log("Zero")
-}
-if(input < 0){
-    console.log("Negative")
-}
+// console.log(count);
 
-// Prompt se kuch bhi mango vo humesha String deta hai , therefore we use Number(prompt()) 
-// convert string to a number : parseInt("") or Number()
-// + sign ahead of prompt() , +prompt() : will convert string to number. 
-// Jab bhi prompt se kuch mangoge toh socho kya vo , ek number hai ? Agar hai toh usko convert karna padega
+// 2.
 
-// - Number()
-// - parseInt("")
-// - +
+// count = 0;
 
-// 7. Ask user ki age and check if her is eligible to vote or not :
+// for (i=1;i<16;i++){
+//     if(i>8){
+//         ++count;
+//         console.log(`${i}`);
+//         console.log(count);
+//     }
+// }
 
-let age = prompt("Input your age: ")
-if (age === null){
-    console.error("You presses Cancel.")
-}
-if(age >= 18){
-    console.log("Your are eligible.")
-}
-else{
-    console.log("Ineligible")
-}
+// console.log(count);
 
-// leading spaces
-// Training Spaces
-// .trim() : it trims down all the leading and training spaces , it doesn't removes the in btwn spaces only start and ones.
+// 3. if count inside the loop:
 
-// sir: 
-// NaN === Nan -> false
-// isNaN(NaN) -> true
 
-let age = prompt("Age Batao: ");
+// for (i=1;i<16;i++){
+//     count = 0;
+//     if(i>8){     //here value of count gets refresh or updated to 0 again and again that is why we only get 1 everytime.
+//         count++;
+//     }
+// }
 
-if (age === null){
-    console.error("You Cancelled it.")
-}
-else{ if (age.trim()  === ""){
-    console.error("b*** Dhang se Likhle.");
-}
-    else{
-        age = Number(age.trim());
+// console.log(count);
 
-    if(isNaN(age)){
-        console.error("Please input a Number.");
-    }
-    else{
-        console.log(age);
-    }
-    }
-}
+// Question-10 : Ask user for passwordand check access status: 
+
+// let password = "Password";
+
+// let pass = prompt("Input your password.")
+
+// if (pass === null){
+//     console.error("You pressed Cancel.")
+// }
+// if(pass === password){
+//     console.log("Matched!")
+// }
+// else{
+//     console.log("Access Denied , Wrong Password!")
+// }
+
+
+// Level - 2 : Questions : Little Tougher but Logical
+
